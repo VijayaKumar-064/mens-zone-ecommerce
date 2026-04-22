@@ -1,0 +1,38 @@
+.tracking-page {}
+.tracking-content { padding: 40px 20px; max-width: 860px; margin: 0 auto; }
+.tracking-search-card { padding: 28px; margin-bottom: 28px; }
+.tracking-search-card h3 { font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.tracking-search-row { display: flex; gap: 12px; }
+.tracking-error { color: var(--accent); margin-top: 10px; font-size: 0.9rem; }
+.tracking-result { display: flex; flex-direction: column; gap: 20px; }
+.tracking-header { padding: 24px; display: flex; align-items: center; justify-content: space-between; }
+.tracking-header h3 { font-weight: 700; font-size: 1.1rem; }
+.track-date { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
+.badge-lg { font-size: 0.9rem; padding: 6px 16px; }
+.tracking-progress { padding: 28px; }
+.progress-steps { display: flex; justify-content: space-between; position: relative; margin-bottom: 8px; }
+.progress-step { display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1; }
+.step-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--bg-secondary); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; }
+.progress-step.completed .step-dot { background: #10b981; border-color: #10b981; color: #fff; }
+.progress-step.current .step-dot { background: var(--accent); border-color: var(--accent); color: #fff; animation: pulse 1.5s infinite; }
+.progress-step span { font-size: 0.8rem; font-weight: 500; color: var(--text-muted); }
+.progress-step.completed span, .progress-step.current span { color: var(--text-primary); font-weight: 600; }
+.progress-bar { height: 4px; background: var(--border); border-radius: 2px; margin-top: 8px; position: relative; }
+.progress-fill { height: 100%; background: linear-gradient(to right, #10b981, var(--accent)); border-radius: 2px; transition: width 0.5s ease; }
+.tracking-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.tracking-addr h4, .tracking-order-info h4 { font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.tracking-addr p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7; }
+.info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+.info-row span:first-child { color: var(--text-muted); }
+.status-history { padding: 24px; }
+.status-history h4 { font-weight: 700; margin-bottom: 20px; }
+.history-list { display: flex; flex-direction: column; gap: 0; }
+.history-item { display: flex; gap: 16px; padding-bottom: 20px; position: relative; }
+.history-item:not(:last-child)::before { content: ''; position: absolute; left: 7px; top: 20px; bottom: 0; width: 2px; background: var(--border); }
+.history-dot { width: 16px; height: 16px; background: var(--accent); border-radius: 50%; flex-shrink: 0; margin-top: 2px; }
+.history-status { font-weight: 600; font-size: 0.9rem; }
+.history-note { color: var(--text-muted); font-size: 0.82rem; }
+.history-time { color: var(--text-muted); font-size: 0.78rem; margin-top: 2px; }
+.tracking-addr { padding: 24px; }
+.tracking-order-info { padding: 24px; }
+@media (max-width: 600px) { .tracking-info-grid { grid-template-columns: 1fr; } .tracking-search-row { flex-direction: column; } }
